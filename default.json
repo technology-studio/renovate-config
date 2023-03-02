@@ -15,6 +15,12 @@
   ],
   "packageRules": [
     {
+      "matchDepTypes": [
+        "peerDependencies"
+      ],
+      "semanticCommitType": "fix"
+    },
+    {
       "groupName": "Typescript packages",
       "groupSlug": "typescript-packages",
       "matchPackageNames": [
