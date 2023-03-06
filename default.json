@@ -33,6 +33,9 @@
       "groupSlug": "react-packages",
       "extends": [
         "packages:react"
+      ],
+      "matchPackageNames": [
+        "@types/react-dom"
       ]
     }
   ]
