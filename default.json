@@ -6,15 +6,37 @@
     ":automergeMinor"
   ],
   "rangeStrategy": "bump",
-  "assignees": [
-    "rostislav-simonik",
-    "erik-slovak"
-  ],
   "reviewers": [
     "rostislav-simonik",
     "erik-slovak"
   ],
   "ignoreReviewers": [
     "renovate-approve"
+  ],
+  "packageRules": [
+    {
+      "matchDepTypes": [
+        "peerDependencies"
+      ],
+      "semanticCommitType": "fix"
+    },
+    {
+      "groupName": "Typescript packages",
+      "groupSlug": "typescript-packages",
+      "matchPackageNames": [
+        "@types/node",
+        "typescript"
+      ]
+    },
+    {
+      "groupName": "React packages",
+      "groupSlug": "react-packages",
+      "extends": [
+        "packages:react"
+      ],
+      "matchPackageNames": [
+        "@types/react-dom"
+      ]
+    }
   ]
 }
