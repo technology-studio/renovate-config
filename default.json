@@ -37,6 +37,15 @@
       "matchPackageNames": [
         "@types/react-dom"
       ]
+    },
+    {
+      "matchDepTypes": [
+        "engines"
+      ],
+      "enabled": false,
+      "major":  {
+        "enabled": true
+      }
     }
   ]
 }
