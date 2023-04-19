@@ -13,6 +13,11 @@
   "ignoreReviewers": [
     "renovate-approve"
   ],
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/bower_components/**",
+    "**/vendor/**"
+  ],
   "packageRules": [
     {
       "matchDepTypes": [
