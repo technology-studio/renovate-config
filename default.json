@@ -59,7 +59,8 @@
         "eslint-plugin-n",
         "eslint-plugin-promise",
         "eslint-plugin-txo-typescript"
-      ]
+      ],
+      "automerge": true
     },
     {
       "matchDepTypes": [
