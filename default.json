@@ -61,7 +61,10 @@
         "eslint-plugin-txo-typescript"
       ],
       "matchUpdateTypes": ["major", "minor", "patch", "lockFileMaintenance"],
-      "automerge": true
+      "automerge": true,
+      "major": {
+        "automerge": true
+      }
     },
     {
       "matchDepTypes": [
