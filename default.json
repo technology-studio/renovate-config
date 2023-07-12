@@ -60,6 +60,7 @@
         "eslint-plugin-promise",
         "eslint-plugin-txo-typescript"
       ],
+      "matchUpdateTypes": ["major", "minor", "patch", "lockFileMaintenance"],
       "automerge": true
     },
     {
