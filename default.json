@@ -60,7 +60,8 @@
         "eslint-plugin-promise",
         "eslint-plugin-txo-typescript"
       ],
-      "matchUpdateTypes": ["major", "minor", "patch", "lockFileMaintenance"],
+      "matchUpdateTypes": ["major", "minor", "patch", "pin", "pinDigest", "digest", "lockFileMaintenance", "rollback", "bump", "replacement"],
+      "separateMajorMinor": false,
       "automerge": true,
       "major": {
         "automerge": true
