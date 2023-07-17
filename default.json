@@ -60,7 +60,8 @@
         "eslint-plugin-promise",
         "eslint-plugin-txo-typescript"
       ],
-      "separateMajorMinor": false
+      "separateMajorMinor": false,
+      "semanticCommitType": "fix"
     },
     {
       "matchDepTypes": [
