@@ -46,19 +46,9 @@
     {
       "groupName": "Eslint txo packages",
       "groupSlug": "eslint-txo-packages",
-      "matchPackageNames": [
-        "@typescript-eslint/eslint-plugin",
-        "@typescript-eslint/parser",
-        "eslint",
-        "eslint-config-txo-typescript",
-        "eslint-config-txo-typescript-react",
-        "eslint-formatter-pretty",
-        "eslint-plugin-eslint-comments",
-        "eslint-plugin-import",
-        "eslint-plugin-jest",
-        "eslint-plugin-n",
-        "eslint-plugin-promise",
-        "eslint-plugin-txo-typescript"
+      "matchPackagePrefixes": [
+        "@typescript-eslint/",
+        "eslint"
       ],
       "separateMajorMinor": false,
       "semanticCommitType": "fix"
