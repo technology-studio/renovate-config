@@ -52,7 +52,7 @@
       ],
       "automerge": true,
       "separateMajorMinor": false,
-      "semanticCommitType": "fix"
+      "semanticCommitType": "chore"
     },
     {
       "matchDepTypes": [
