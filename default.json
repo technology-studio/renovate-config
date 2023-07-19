@@ -51,8 +51,7 @@
         "eslint"
       ],
       "automerge": true,
-      "separateMajorMinor": false,
-      "semanticCommitType": "fix"
+      "separateMajorMinor": false
     },
     {
       "matchDepTypes": [
