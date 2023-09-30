@@ -3,7 +3,8 @@
   "extends": [
     "config:base",
     ":semanticCommits",
-    ":automergeMinor"
+    ":automergeMinor",
+    "helpers:pinGitHubActionDigests"
   ],
   "rangeStrategy": "bump",
   "reviewers": [
