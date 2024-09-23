@@ -62,6 +62,21 @@
       "major":  {
         "enabled": true
       }
+    },
+    {
+      "matchPackageNames": ["chalk"],
+      "allowedVersions": "<5.0.0",
+      "description": "Ignore due to migration to ESM"
+    },
+    {
+      "matchPackageNames": ["octokit"],
+      "allowedVersions": "<4.0.0",
+      "description": "Ignore due to migration to ESM"
+    },
+    {
+      "matchPackageNames": ["untildify"],
+      "allowedVersions": "<5.0.0",
+      "description": "Ignore due to migration to ESM"
     }
   ],
   "postUpdateOptions": ["yarnDedupeHighest"]
