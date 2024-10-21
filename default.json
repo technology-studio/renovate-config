@@ -62,6 +62,21 @@
       "major":  {
         "enabled": true
       }
+    },
+    {
+      "groupName": "Playwright version sync",
+      "packageNames": ["@playwright/test"],
+      "regexManagers": [
+        {
+          "fileMatch": [".github/workflows/app-health-cd.yml"],
+          "matchStrings": [
+            "playwright_version:\\s(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+)"
+          ],
+          "datasourceTemplate": "npm",
+          "depNameTemplate": "@playwright/test",
+          "versioningTemplate": "semver"
+        }
+      ]
     }
   ],
   "postUpdateOptions": ["yarnDedupeHighest"]
