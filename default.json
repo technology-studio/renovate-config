@@ -59,7 +59,7 @@
         "engines"
       ],
       "enabled": false,
-      "major":  {
+      "major": {
         "enabled": true
       }
     },
@@ -77,6 +77,11 @@
           "versioningTemplate": "semver"
         }
       ]
+    },
+    {
+      "groupName": "Node version",
+      "packageNames": ["@types/node"],
+      "matchManagers": ["nvm"]
     }
   ],
   "postUpdateOptions": ["yarnDedupeHighest"]
