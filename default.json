@@ -27,12 +27,13 @@
       "semanticCommitType": "fix"
     },
     {
-      "groupName": "Typescript packages",
-      "groupSlug": "typescript-packages",
+      "groupName": "Typescript and Node versions",
+      "groupSlug": "typescript-and-node-packages",
       "matchPackageNames": [
         "@types/node",
         "typescript"
-      ]
+      ],
+      "matchManagers": ["nvm"]
     },
     {
       "groupName": "React packages",
@@ -77,11 +78,6 @@
           "versioningTemplate": "semver"
         }
       ]
-    },
-    {
-      "groupName": "Node version",
-      "packageNames": ["@types/node"],
-      "matchManagers": ["nvm"]
     }
   ],
   "postUpdateOptions": ["yarnDedupeHighest"]
