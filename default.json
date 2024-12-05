@@ -53,6 +53,7 @@
         "eslint"
       ],
       "automerge": true,
+      "prPriority": -1,
       "separateMajorMinor": false
     },
     {
