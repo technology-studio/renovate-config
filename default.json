@@ -19,6 +19,18 @@
     "**/bower_components/**",
     "**/vendor/**"
   ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["\\.github/workflows/.*\\.yml$"],
+      "matchStrings": [
+        "playwright_version:\\s*(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+)"
+      ],
+      "datasourceTemplate": "npm",
+      "depNameTemplate": "@playwright/test",
+      "versioningTemplate": "semver"
+    }
+  ],
   "packageRules": [
     {
       "matchDepTypes": [
@@ -67,19 +79,9 @@
     },
     {
       "groupName": "Playwright version sync",
-      "packageNames": ["@playwright/test"],
-      "customManagers": [
-        {
-          "customType": "regex",
-          "fileMatch": [".github/workflows/app-health-cd.yml"],
-          "matchStrings": [
-            "playwright_version:\\s(?<currentValue>[0-9]+\\.[0-9]+\\.[0-9]+)"
-          ],
-          "datasourceTemplate": "npm",
-          "depNameTemplate": "@playwright/test",
-          "versioningTemplate": "semver"
-        }
-      ]
+      "groupSlug": "playwright-packages",
+      "matchPackageNames": ["@playwright/test"],
+      "matchManagers": ["npm", "regex"]
     }
   ],
   "postUpdateOptions": ["yarnDedupeHighest"]
