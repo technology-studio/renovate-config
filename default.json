@@ -7,7 +7,7 @@
     "helpers:pinGitHubActionDigests"
   ],
   "rangeStrategy": "bump",
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "30 days",
   "internalChecksFilter": "strict",
   "reviewers": [
     "rostislav-simonik",
