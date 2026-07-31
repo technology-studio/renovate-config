@@ -4,7 +4,7 @@
     "config:base",
     ":semanticCommits",
     ":automergeMinor",
-    "helpers:pinGitHubActionDigests"
+    "helpers:pinGitHubActionDigestsToSemver"
   ],
   "rangeStrategy": "bump",
   "minimumReleaseAge": "30 days",
@@ -88,6 +88,14 @@
     {
       "matchPackagePatterns": [ "^@txo/.*", "^@txo-peer-dep/.*" ],
       "minimumReleaseAge": null
+    },
+    {
+      "matchDepTypes": [ "action" ],
+      "matchPackageNames": [
+        "technology-studio/github-workflows",
+        "technology-studio/github-workflows-private"
+      ],
+      "pinDigests": false
     }
   ],
   "postUpdateOptions": [ "yarnDedupeHighest" ]
