@@ -4,7 +4,7 @@
     "config:base",
     ":semanticCommits",
     ":automergeMinor",
-    "helpers:pinGitHubActionDigests"
+    "helpers:pinGitHubActionDigestsToSemver"
   ],
   "rangeStrategy": "bump",
   "minimumReleaseAge": "30 days",
